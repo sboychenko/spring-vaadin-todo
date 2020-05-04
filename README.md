@@ -2,6 +2,10 @@
 
 ![screenshot](screenshot.png)
 
+Live Demo [HEROKU](https://vaadin-todo-app.herokuapp.com/)
+> Настроен автоматический сброс каждый час ;) 
+
+
 В проекте используются:
 - Spring boot [Spring initializr](https://start.spring.io/)
 - Spring Data + H2 [Link](https://spring.io/projects/spring-data)

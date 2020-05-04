@@ -12,7 +12,7 @@
 
 Прописать в `application.properties` необходимые настройки
 ```
-./mvn package
+./mvnw package
 ```
 Собранный **jar** файл будет находиться в `./target`
 

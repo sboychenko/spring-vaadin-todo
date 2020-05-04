@@ -6,6 +6,6 @@ CREATE TABLE IF NOT EXISTS Todo(
   priority VARCHAR
 );
 DELETE FROM Todo;
-INSERT INTO Todo(id, done, text, due, priority) VALUES(99991, TRUE, 'Do something', null, 'HIGH');
-INSERT INTO Todo(id, done, text, due, priority) VALUES(99992, FALSE, 'Do something else', null, 'LOW');
-INSERT INTO Todo(id, done, text, due, priority) VALUES(99993, TRUE, 'Test application', CURRENT_DATE, 'NORMAL');
+-- INSERT INTO Todo(id, done, text, due, priority) VALUES(99991, TRUE, 'Do something', null, 'HIGH');
+-- INSERT INTO Todo(id, done, text, due, priority) VALUES(99992, FALSE, 'Do something else', null, 'LOW');
+-- INSERT INTO Todo(id, done, text, due, priority) VALUES(99993, TRUE, 'Test application', CURRENT_DATE, 'NORMAL');

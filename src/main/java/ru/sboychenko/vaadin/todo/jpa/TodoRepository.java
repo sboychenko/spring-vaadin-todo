@@ -18,4 +18,7 @@ public interface TodoRepository extends JpaRepository<Todo, Long> {
     List<Todo> findByOrderByDueAsc();
 
     List<Todo> findByDoneFalseAndDueNotNull();
+
+    @Transactional
+    void deleteAll();
 }

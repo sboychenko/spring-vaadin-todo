@@ -24,6 +24,13 @@ public class Todo {
         this.priority = priority;
     }
 
+    public Todo(String text, LocalDate due, Priority priority, boolean done) {
+        this.text = text;
+        this.due = due;
+        this.priority = priority;
+        this.done = done;
+    }
+
     public long getId() {
         return id;
     }

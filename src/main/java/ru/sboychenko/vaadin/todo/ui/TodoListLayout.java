@@ -58,7 +58,7 @@ public class TodoListLayout extends VerticalLayout implements TodoChangeListener
         removeAll();
         List<Todo> all = repository.findByOrderByDueAsc();
 
-        double step = (double) 100 / all.size();
+        double step = all.size() == 0 ? 0 : (double) 100 / all.size();
         ProgressBar progress = new ProgressBar(0, 100, step);
         progress.setValue(all.stream().filter(Todo::isDone).count() * step);
 

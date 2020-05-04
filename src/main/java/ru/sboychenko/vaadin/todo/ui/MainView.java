@@ -8,12 +8,16 @@ import com.vaadin.flow.component.icon.Icon;
 import com.vaadin.flow.component.icon.VaadinIcon;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.dom.ThemeList;
+import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
+import com.vaadin.flow.server.PWA;
 import com.vaadin.flow.theme.Theme;
 import com.vaadin.flow.theme.lumo.Lumo;
 import org.springframework.beans.factory.annotation.Autowired;
 
+@PWA(name = "Vaadin TODO Demo app", shortName = "Vaadin TODO", description = "Demo app with Vaadin & Spring")
 @Route
+@PageTitle("Vaadin TODO")
 @CssImport("styles/shared-styles.css")
 @Theme(value = Lumo.class, variant = Lumo.LIGHT)
 public class MainView extends VerticalLayout {

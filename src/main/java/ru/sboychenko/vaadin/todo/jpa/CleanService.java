@@ -22,12 +22,17 @@ public class CleanService {
     @Autowired
     public CleanService(TodoRepository repository) {
         this.repository = repository;
+        addDemoData();
     }
 
     @Scheduled(cron = "0 0 * * * *")
     public void clear() {
         log.info("CLEAR DB");
         repository.deleteAll();
+        addDemoData();
+    }
+
+    private void addDemoData() {
         repository.save(new Todo("Test application", LocalDate.now(), Priority.NORMAL, true));
         repository.save(new Todo("Do something", null, Priority.LOW, false));
         repository.save(new Todo("Do something els", LocalDate.of(2021, 12, 2), Priority.HIGH, false));

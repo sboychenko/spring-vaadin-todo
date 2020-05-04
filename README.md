@@ -30,3 +30,6 @@ java -jar ./target/vaadin-todo-0.0.1-SNAPSHOT.jar
 ```
 http://localhost:8080
 ```
+
+#### Howto Vaadin 14 deploy to Heroku
+https://ramonak.io/posts/how-to-deploy-vaadin-14-app-to-heroku
